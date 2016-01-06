@@ -1,0 +1,10 @@
+<h1>Create a New Account:</h1>
+<%= form_for User.new do |f| %>   
+<%=f.label :First_Name %>   
+<%=f.text_field :fname %>
+<%=f.label :Last_Name %>   
+<%=f.text_field :lname %> 
+<%=f.label :Email %>   
+<%=f.text_field :email %> 
+ <%=f.submit :create %> 
+ <% end %>
